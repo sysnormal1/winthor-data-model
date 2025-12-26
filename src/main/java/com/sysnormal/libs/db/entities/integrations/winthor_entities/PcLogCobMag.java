@@ -72,4 +72,9 @@ public class PcLogCobMag extends BaseEntity {
     @Column(name = "MAQUINA")
     private Long rotinaLanc;
 
+
+    protected static final long TABLE_ID = 30221;
+    public static long getTableId() {
+        return TABLE_ID;
+    }
 }

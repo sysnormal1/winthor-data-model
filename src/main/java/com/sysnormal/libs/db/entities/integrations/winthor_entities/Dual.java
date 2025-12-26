@@ -20,6 +20,9 @@ public class Dual extends BaseEntity {
     @Column(name = "ROWID", updatable = false, insertable = false)
     private String rowId;
 
-
+    protected static final long TABLE_ID = 29999;
+    public static long getTableId() {
+        return TABLE_ID;
+    }
 
 }
