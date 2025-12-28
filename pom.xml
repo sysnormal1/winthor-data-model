@@ -74,7 +74,6 @@
 			<groupId>com.sysnormal.libs.db.entities</groupId>
 			<artifactId>base-entities</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-			<optional>true</optional>
 		</dependency>
 
 	</dependencies>
