@@ -41,6 +41,9 @@ public class PcPedI extends BaseEntity {
     @Column(name = "PTABELA")
     private BigDecimal pTabela;
 
+    @Column(name = "VLCUSTOFIN")
+    private BigDecimal vlCustoFin;
+
     @Column(name = "VLDESCFIN")
     private BigDecimal vlDescFin;
 
