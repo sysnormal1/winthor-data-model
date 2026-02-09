@@ -8,6 +8,7 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Getter
@@ -66,6 +67,12 @@ public class PcUsuari extends BaseEntity {
 
     @Column(name = "OBSBLOQ")
     private String obsBloq;
+
+    @Column(name = "VLCORRENTE", precision = 10, scale = 2)
+    private BigDecimal vlCorrente;
+
+    @Column(name = "VLLIMCRED", precision = 10, scale = 2)
+    private BigDecimal vlLimcred;
 
     @Column(name = "OBSFORCAVENDAS1")
     private String obsForcaVendas1;
