@@ -34,7 +34,7 @@ Add this dependency to your application’s `pom.xml`:
 <dependency>
     <groupId>io.github.sysnormal1.data.integrations>
     <artifactId>winthor-data-model</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 </dependency>
 ```
 
