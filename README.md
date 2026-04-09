@@ -1,5 +1,7 @@
 # Sysnormal Database Winthor Integration Entities Library
-
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.sysnormal1.data.integrations/winthor-data-model.svg)](https://central.sonatype.com/artifact/io.github.sysnormal1.data.integrations/winthor-data-model)
+[![MvnRepository](https://img.shields.io/badge/mvnrepository-view-blue)](https://mvnrepository.com/artifact/io.github.sysnormal1.data.integrations/winthor-data-model)
+[![GitHub tag](https://img.shields.io/github/v/tag/sysnormal1/winthor-data-model)](https://github.com/sysnormal1/winthor-data-model)
 ---
 
 ## 🚀 Purpose
@@ -34,7 +36,7 @@ Add this dependency to your application’s `pom.xml`:
 <dependency>
     <groupId>io.github.sysnormal1.data.integrations>
     <artifactId>winthor-data-model</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
