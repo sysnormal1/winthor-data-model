@@ -6,7 +6,7 @@
 	<!--<groupId>com.sysnormal.data.integrations</groupId>-->
 	<groupId>io.github.sysnormal1.data.integrations</groupId>
 	<artifactId>winthor-data-model</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<name>winthor-data-model</name>
 	<description>Sysnormal database winthor integration entities library</description>
 	<url>https://github.com/sysnormal1/winthor-data-model</url>
@@ -85,15 +85,15 @@
 		</dependency>
 
 		<dependency>
-			<groupId>io.github.sysnormal1.data</groupId>
-			<artifactId>base-data-model</artifactId>
-			<version>0.0.3</version>
+			<groupId>io.github.sysnormal1.commons.core</groupId>
+			<artifactId>utils-core</artifactId>
+			<version>0.0.4</version>
 		</dependency>
 
 		<dependency>
-			<groupId>io.github.sysnormal1.commons.core</groupId>
-			<artifactId>utils-core</artifactId>
-			<version>0.0.3</version>
+			<groupId>io.github.sysnormal1.data</groupId>
+			<artifactId>base-data-model</artifactId>
+			<version>0.0.4</version>
 		</dependency>
 
 	</dependencies>
