@@ -6,7 +6,7 @@
 	<!--<groupId>com.sysnormal.data.integrations</groupId>-->
 	<groupId>io.github.sysnormal1.data.integrations</groupId>
 	<artifactId>winthor-data-model</artifactId>
-	<version>0.0.4</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<name>winthor-data-model</name>
 	<description>Sysnormal database winthor integration entities library</description>
 	<url>https://github.com/sysnormal1/winthor-data-model</url>
@@ -51,7 +51,7 @@
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
-				<version>4.0.5</version>
+				<version>4.1.0</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -87,13 +87,13 @@
 		<dependency>
 			<groupId>io.github.sysnormal1.commons.core</groupId>
 			<artifactId>utils-core</artifactId>
-			<version>0.0.4</version>
+			<version>0.0.5-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.github.sysnormal1.data</groupId>
 			<artifactId>base-data-model</artifactId>
-			<version>0.0.4</version>
+			<version>0.0.5-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
@@ -151,7 +151,7 @@
 			<plugin>
 				<groupId>org.sonatype.central</groupId>
 				<artifactId>central-publishing-maven-plugin</artifactId>
-				<version>0.10.0</version>
+				<version>0.11.0</version>
 				<extensions>true</extensions>
 				<configuration>
 					<publishingServerId>central-releases</publishingServerId>
