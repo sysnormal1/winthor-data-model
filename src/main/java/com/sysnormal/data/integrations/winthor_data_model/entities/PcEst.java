@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
  * Entity class
  *
  * Estoque por produto e filial. Colunas medidas como sempre vazias nesta base
- * (CUSTOPROXIMACOMPRA, CUSTOFORNEC, QTTRANSITO, QTPENDENTE) ficam de fora de proposito.
+ * (CUSTOFORNEC, QTTRANSITO) ficam de fora de proposito.
  */
 @Getter
 @Setter
@@ -38,6 +38,9 @@ public class PcEst extends BaseEntity {
 
     @Column(name = "QTBLOQUEADA")
     private BigDecimal qtBloqueada;
+
+    @Column(name = "QTPENDENTE")
+    private BigDecimal qtPendente;
 
     // custos
     @Column(name = "CUSTOREP")
