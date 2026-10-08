@@ -143,6 +143,78 @@ public class PcClient extends BaseEntity {
     @Column(name = "DTEXCLUSAO")
     private LocalDateTime dtExclusao;
 
+    @Column(name = "DTCADASTRO")
+    private LocalDateTime dtCadastro;
+
+    /* Carteiras alem da principal. A inativacao de cliente anula as tres. */
+    @Column(name = "CODUSUR2")
+    private Long codUsur2;
+
+    @Column(name = "CODUSUR3")
+    private Long codUsur3;
+
+    @Column(name = "CODUSURECOMMERCE")
+    private Long codUsurEcommerce;
+
+    @Column(name = "CODMUNICIPIO")
+    private Long codMunicipio;
+
+    /* Fiscal */
+    @Column(name = "IEENT")
+    private String ieEnt;
+
+    @Column(name = "SIMPLESNACIONAL")
+    private String simplesNacional;
+
+    @Column(name = "CONTRIBUINTE")
+    private String contribuinte;
+
+    @Column(name = "CAPITALSOCIAL")
+    private BigDecimal capitalSocial;
+
+    @Column(name = "INICIOATIV")
+    private LocalDateTime inicioAtiv;
+
+    @Column(name = "MICROEMPRESA")
+    private String microEmpresa;
+
+    @Column(name = "TIPOEMPRESA")
+    private String tipoEmpresa;
+
+    @Column(name = "CLIMEIOPTANTESN")
+    private String cliMeiOptanteSn;
+
+    /* Municipio e UF dos tres enderecos. O MUNIC* e VARCHAR2(15) e nao comporta
+       nome de municipio: boa parte do cadastro ja esta truncada pelo proprio ERP. */
+    @Column(name = "MUNICENT")
+    private String municEnt;
+
+    @Column(name = "MUNICCOM")
+    private String municCom;
+
+    @Column(name = "MUNICCOB")
+    private String municCob;
+
+    @Column(name = "ESTENT")
+    private String estEnt;
+
+    @Column(name = "ESTCOM")
+    private String estCom;
+
+    @Column(name = "ESTCOB")
+    private String estCob;
+
+    /* Contato */
+    @Column(name = "TELCELENT")
+    private String telCelEnt;
+
+    @Column(name = "EMAIL")
+    private String email;
+
+    /** Lista de e-mails separados por ponto e virgula; dai os 3.500 caracteres. */
+    @Column(name = "EMAILNFE")
+    private String emailNfe;
+
     /*@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CODFILIALNF", insertable = false, updatable = false)
     private PcFilial filial;
