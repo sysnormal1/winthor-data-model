@@ -36,27 +36,27 @@ public class PcContato extends BaseEntity {
     private Long codCli;
 
     /** C comprador, F funcionario, G gerente, P procurador, S socio, T pessoa fisica. */
-    @Column(name = "TIPOCONTATO")
+    @Column(name = "TIPOCONTATO", length = 1)
     private String tipoContato;
 
-    @Column(name = "NOMECONTATO")
+    @Column(name = "NOMECONTATO", length = 40)
     private String nomeContato;
 
-    @Column(name = "CARGO")
+    @Column(name = "CARGO", length = 30)
     private String cargo;
 
     /** CPF ou CNPJ com mascara. */
-    @Column(name = "CGCCPF")
+    @Column(name = "CGCCPF", length = 18)
     private String cgcCpf;
 
     /** So digitos, preenchido por trigger do ERP a partir do CGCCPF. */
-    @Column(name = "CGCCPFAUX")
+    @Column(name = "CGCCPFAUX", length = 14)
     private String cgcCpfAux;
 
-    @Column(name = "RG")
+    @Column(name = "RG", length = 20)
     private String rg;
 
-    @Column(name = "DOC")
+    @Column(name = "DOC", length = 20)
     private String doc;
 
     @Column(name = "DTNASCIMENTO")
@@ -70,52 +70,52 @@ public class PcContato extends BaseEntity {
     @Column(name = "DTSOCIEDADE")
     private LocalDateTime dtSociedade;
 
-    @Column(name = "NOMECONJUGE")
+    @Column(name = "NOMECONJUGE", length = 40)
     private String nomeConjuge;
 
     @Column(name = "DTNASCCONJUGE")
     private LocalDateTime dtNascConjuge;
 
-    @Column(name = "ENDERECO")
+    @Column(name = "ENDERECO", length = 40)
     private String endereco;
 
-    @Column(name = "BAIRRO")
+    @Column(name = "BAIRRO", length = 150)
     private String bairro;
 
-    @Column(name = "CIDADE")
+    @Column(name = "CIDADE", length = 30)
     private String cidade;
 
-    @Column(name = "ESTADO")
+    @Column(name = "ESTADO", length = 2)
     private String estado;
 
-    @Column(name = "CEP")
+    @Column(name = "CEP", length = 9)
     private String cep;
 
-    @Column(name = "TELEFONE")
+    @Column(name = "TELEFONE", length = 18)
     private String telefone;
 
-    @Column(name = "CELULAR")
+    @Column(name = "CELULAR", length = 18)
     private String celular;
 
-    @Column(name = "EMAIL")
+    @Column(name = "EMAIL", length = 50)
     private String email;
 
-    @Column(name = "HOBBIE")
+    @Column(name = "HOBBIE", length = 50)
     private String hobbie;
 
-    @Column(name = "TIME")
+    @Column(name = "TIME", length = 30)
     private String time;
 
-    @Column(name = "OBS")
+    @Column(name = "OBS", length = 1000)
     private String obs;
 
-    @Column(name = "AUTORCH")
+    @Column(name = "AUTORCH", length = 1)
     private String autorCh;
 
-    @Column(name = "AUTORIZADO")
+    @Column(name = "AUTORIZADO", length = 1)
     private String autorizado;
 
-    @Column(name = "MOTIVONAOAUTORIZADO")
+    @Column(name = "MOTIVONAOAUTORIZADO", length = 2000)
     private String motivoNaoAutorizado;
 
     @Column(name = "DTBLOQUEIO")
@@ -133,13 +133,13 @@ public class PcContato extends BaseEntity {
     @Column(name = "CODBANCO")
     private Long codBanco;
 
-    @Column(name = "AGENCIA")
+    @Column(name = "AGENCIA", length = 6)
     private String agencia;
 
-    @Column(name = "CONTA")
+    @Column(name = "CONTA", length = 10)
     private String conta;
 
-    @Column(name = "SENHA")
+    @Column(name = "SENHA", length = 32)
     private String senha;
 
     /**
@@ -152,6 +152,6 @@ public class PcContato extends BaseEntity {
      * ecossistema le essa coluna, mapea-la so acrescentaria risco de o servico nao
      * subir. Se um dia for preciso, confira o comportamento do validate antes.</p>
      */
-    @Column(name = "ION_ID")
+    @Column(name = "ION_ID", length = 36)
     private String ionId;
 }
