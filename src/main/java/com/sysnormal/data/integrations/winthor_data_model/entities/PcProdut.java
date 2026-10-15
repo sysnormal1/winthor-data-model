@@ -59,6 +59,26 @@ public class PcProdut extends BaseEntity {
     @Column(name = "OBS2")
     private String obs2;
 
+    /** A unidade de compra (caixa, fardo). VARCHAR2(2). */
+    @Column(name = "UNIDADEMASTER", length = 2)
+    private String unidadeMaster;
+
+    /**
+     * Quantas unidades de venda cabem na unidade master. NUMBER(12,6).
+     *
+     * <p>Não confundir com {@code QTUNIT}, que é a quantidade dentro da unidade de
+     * venda e vale 1 em quase todo o cadastro.</p>
+     */
+    @Column(name = "QTUNITCX")
+    private BigDecimal qtUnitCx;
+
+    /**
+     * {@code 'S'} para mercadoria de revenda, {@code 'N'} para o resto — o mesmo
+     * cadastro guarda imobilizado e material de consumo. VARCHAR2(1), sem nulos.
+     */
+    @Column(name = "REVENDA", length = 1)
+    private String revenda;
+
     /*@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CODNCMEX", insertable = false, updatable = false)
     private PcNcm ncm;
