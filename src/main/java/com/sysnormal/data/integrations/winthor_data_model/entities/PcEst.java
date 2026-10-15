@@ -39,6 +39,10 @@ public class PcEst extends BaseEntity {
     @Column(name = "QTBLOQUEADA")
     private BigDecimal qtBloqueada;
 
+    /** Estoque mínimo. NUMBER(16,3), nulo em 7.173 das 9.603 linhas (2026-10-15). */
+    @Column(name = "ESTMIN")
+    private BigDecimal estMin;
+
     @Column(name = "QTPENDENTE")
     private BigDecimal qtPendente;
 
